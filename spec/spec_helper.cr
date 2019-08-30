@@ -1,2 +1,2 @@
 require "spec"
-require "../src/cadmium_string_distance"
+require "../src/cadmium/distance"
