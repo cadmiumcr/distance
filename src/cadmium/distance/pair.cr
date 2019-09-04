@@ -3,7 +3,7 @@ module Cadmium
     # Uses Dice's Coefficient to get the similarity between two words,
     # or sentences.
     def self.distance(s1 : String, s2 : String)
-      ngrams = Cadmium.ngrams.new(tokenizer: Cadmium::VisibleCharTokenizer.new)
+      ngrams = Cadmium.ngrams.new(tokenizer: Cadmium::Tokenizer::VisibleChar.new)
       s1bigrams = ngrams.bigrams(s1)
       s2bigrams = ngrams.bigrams(s2)
 
