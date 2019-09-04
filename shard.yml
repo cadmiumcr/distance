@@ -6,4 +6,8 @@ authors:
 
 crystal: 0.30.1
 
+dependencies:
+  cadmium_ngrams:
+    github: cadmiumcr/ngrams
+
 license: MIT
