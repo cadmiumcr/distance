@@ -1,7 +1,7 @@
 require "../spec_helper"
 
-describe Cadmium::JaroWinklerDistance do
-  subject = Cadmium::JaroWinklerDistance.new
+describe Cadmium::Distance::JaroWinkler do
+  subject = Cadmium::Distance::JaroWinkler.new
 
   it "should evaluate string similarity" do
     subject.distance("DIXON", "DICKSONX").should be_close(0.81333, 0.00001)
