@@ -1,7 +1,7 @@
 require "../spec_helper"
 
-describe Cadmium::LevenshteinDistance do
-  subject = Cadmium::LevenshteinDistance
+describe Cadmium::Distance::Levenshtein do
+  subject = Cadmium::Distance::Levenshtein
 
   it "should replace 2" do
     subject.distance("doctor", "doktor").should eq(1)
